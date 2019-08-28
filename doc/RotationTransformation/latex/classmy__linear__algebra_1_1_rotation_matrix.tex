@@ -1,0 +1,162 @@
+\hypertarget{classmy__linear__algebra_1_1_rotation_matrix}{}\section{my\+\_\+linear\+\_\+algebra\+::Rotation\+Matrix类 参考}
+\label{classmy__linear__algebra_1_1_rotation_matrix}\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+
+
+封装旋转矩阵的基本功能  
+
+
+
+
+{\ttfamily \#include $<$Rotation\+Transformation.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_aba26c4b400653dcb44b7ff2b6764cde1}\label{classmy__linear__algebra_1_1_rotation_matrix_aba26c4b400653dcb44b7ff2b6764cde1}} 
+\mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_aba26c4b400653dcb44b7ff2b6764cde1}{Rotation\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em 默认构造函数 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_a5532902b495f756fdd4109423255c350}\label{classmy__linear__algebra_1_1_rotation_matrix_a5532902b495f756fdd4109423255c350}} 
+\mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_a5532902b495f756fdd4109423255c350}{Rotation\+Matrix}} (const \mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix}{Rotation\+Matrix}} \&R)
+\begin{DoxyCompactList}\small\item\em 拷贝构造函数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_ace11939dfa128364be007d86d584f448}{Rotation\+Matrix}} (const cv\+::\+Matx33d \&R)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_a4097eaf98ce60df31a53f332dd2a308e}{Rotation\+Matrix}} (const cv\+::\+Vec3d \&v)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_ac0f10d4f04cad4290b386187773db668}{Rotation\+Matrix}} (const double psi, const double phi, const double theta)
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+cv\+::\+Vec3d \mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_a6497a83df6764478fcf0d75fd6482979}{Angles}} () const
+\begin{DoxyCompactList}\small\item\em 计算绕x、y、z轴旋转的角度 \end{DoxyCompactList}\item 
+cv\+::\+Vec3d \mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_aff450dadd4a37acb67171ba76832300f}{Vector}} () const
+\begin{DoxyCompactList}\small\item\em 计算3$\ast$3旋转矩阵 \end{DoxyCompactList}\item 
+cv\+::\+Matx33d \mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix_a546939fe80b057e325042b35bd0b0a57}{Matrix}} () const
+\begin{DoxyCompactList}\small\item\em 返回cv\+::\+Matx33d形式的旋转矩阵 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+封装旋转矩阵的基本功能 
+
+在文件 Rotation\+Transformation.\+h 第 176 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_ace11939dfa128364be007d86d584f448}\label{classmy__linear__algebra_1_1_rotation_matrix_ace11939dfa128364be007d86d584f448}} 
+\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}!RotationMatrix@{RotationMatrix}}
+\index{RotationMatrix@{RotationMatrix}!my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+\subsubsection{\texorpdfstring{RotationMatrix()}{RotationMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily my\+\_\+linear\+\_\+algebra\+::\+Rotation\+Matrix\+::\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{const cv\+::\+Matx33d \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em R} & 3$\ast$3旋转矩阵 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Rotation\+Transformation.\+h 第 195 行定义.
+
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_a4097eaf98ce60df31a53f332dd2a308e}\label{classmy__linear__algebra_1_1_rotation_matrix_a4097eaf98ce60df31a53f332dd2a308e}} 
+\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}!RotationMatrix@{RotationMatrix}}
+\index{RotationMatrix@{RotationMatrix}!my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+\subsubsection{\texorpdfstring{RotationMatrix()}{RotationMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily my\+\_\+linear\+\_\+algebra\+::\+Rotation\+Matrix\+::\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{const cv\+::\+Vec3d \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em v} & 旋转向量 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Rotation\+Transformation.\+h 第 203 行定义.
+
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_ac0f10d4f04cad4290b386187773db668}\label{classmy__linear__algebra_1_1_rotation_matrix_ac0f10d4f04cad4290b386187773db668}} 
+\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}!RotationMatrix@{RotationMatrix}}
+\index{RotationMatrix@{RotationMatrix}!my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+\subsubsection{\texorpdfstring{RotationMatrix()}{RotationMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily my\+\_\+linear\+\_\+algebra\+::\+Rotation\+Matrix\+::\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{const double}]{psi,  }\item[{const double}]{phi,  }\item[{const double}]{theta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em psi} & 绕x轴旋转角度 \\
+\hline
+\mbox{\texttt{ in}}  & {\em phi} & 绕y轴旋转角度 \\
+\hline
+\mbox{\texttt{ in}}  & {\em theta} & 绕z轴旋转角度 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Rotation\+Transformation.\+h 第 213 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_a6497a83df6764478fcf0d75fd6482979}\label{classmy__linear__algebra_1_1_rotation_matrix_a6497a83df6764478fcf0d75fd6482979}} 
+\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}!Angles@{Angles}}
+\index{Angles@{Angles}!my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+\subsubsection{\texorpdfstring{Angles()}{Angles()}}
+{\footnotesize\ttfamily cv\+::\+Vec3d my\+\_\+linear\+\_\+algebra\+::\+Rotation\+Matrix\+::\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+计算绕x、y、z轴旋转的角度 
+
+\begin{DoxyReturn}{返回}
+绕x、y、z轴的旋转角度，依次保存在一个向量例 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 221 行定义.
+
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_a546939fe80b057e325042b35bd0b0a57}\label{classmy__linear__algebra_1_1_rotation_matrix_a546939fe80b057e325042b35bd0b0a57}} 
+\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily cv\+::\+Matx33d my\+\_\+linear\+\_\+algebra\+::\+Rotation\+Matrix\+::\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+返回cv\+::\+Matx33d形式的旋转矩阵 
+
+\begin{DoxyReturn}{返回}
+cv\+::\+Matx33d形式的旋转矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 237 行定义.
+
+\mbox{\Hypertarget{classmy__linear__algebra_1_1_rotation_matrix_aff450dadd4a37acb67171ba76832300f}\label{classmy__linear__algebra_1_1_rotation_matrix_aff450dadd4a37acb67171ba76832300f}} 
+\index{my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}!Vector@{Vector}}
+\index{Vector@{Vector}!my\_linear\_algebra::RotationMatrix@{my\_linear\_algebra::RotationMatrix}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}}
+{\footnotesize\ttfamily cv\+::\+Vec3d my\+\_\+linear\+\_\+algebra\+::\+Rotation\+Matrix\+::\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+计算3$\ast$3旋转矩阵 
+
+\begin{DoxyReturn}{返回}
+3$\ast$3旋转矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 229 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Code/\+Public/\mbox{\hyperlink{_rotation_transformation_8h}{Rotation\+Transformation.\+h}}\end{DoxyCompactItemize}

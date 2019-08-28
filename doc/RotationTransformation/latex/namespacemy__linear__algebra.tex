@@ -1,0 +1,313 @@
+\hypertarget{namespacemy__linear__algebra}{}\section{my\+\_\+linear\+\_\+algebra 命名空间参考}
+\label{namespacemy__linear__algebra}\index{my\_linear\_algebra@{my\_linear\_algebra}}
+
+
+线性代数命名空间  
+
+
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_matrix}{Rotation\+Matrix}}
+\begin{DoxyCompactList}\small\item\em 封装旋转矩阵的基本功能 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmy__linear__algebra_1_1_rotation_vector}{Rotation\+Vector}}
+\begin{DoxyCompactList}\small\item\em 封装旋转向量的基本功能 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespacemy__linear__algebra_aa9ecf9b22bbf44d286bf404af3461d58}{Deg2\+Rad}} (const double d)
+\begin{DoxyCompactList}\small\item\em 将角度值转换成弧度值 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacemy__linear__algebra_a899a8fdd5b4b176a7eab324b7b8fd812}{Rad2\+Deg}} (const double r)
+\begin{DoxyCompactList}\small\item\em 将弧度值转成角度值 \end{DoxyCompactList}\item 
+cv\+::\+Matx33d \mbox{\hyperlink{namespacemy__linear__algebra_af25af21d6df34ed01c3b167b301f14de}{Angle2\+Rx}} (const double psi)
+\begin{DoxyCompactList}\small\item\em 计算x轴旋转矩阵 \end{DoxyCompactList}\item 
+cv\+::\+Matx33d \mbox{\hyperlink{namespacemy__linear__algebra_aa49a94528c255627f05e020b5be3f1e3}{Angle2\+Ry}} (const double phi)
+\begin{DoxyCompactList}\small\item\em 计算y轴旋转矩阵 \end{DoxyCompactList}\item 
+cv\+::\+Matx33d \mbox{\hyperlink{namespacemy__linear__algebra_a5b7ede204e82cae38ed044eea54e4d79}{Angle2\+Rz}} (const double theta)
+\begin{DoxyCompactList}\small\item\em 计算z轴旋转矩阵 \end{DoxyCompactList}\item 
+cv\+::\+Matx33d \mbox{\hyperlink{namespacemy__linear__algebra_adf49893ee693256be7a97133ceaa551d}{Angles2R}} (const double psi, const double phi, const double theta)
+\begin{DoxyCompactList}\small\item\em 计算旋转矩阵 \end{DoxyCompactList}\item 
+cv\+::\+Vec3d \mbox{\hyperlink{namespacemy__linear__algebra_a362b45c147136aa0f1045200545cb38a}{R2\+Angles}} (const cv\+::\+Matx33d \&R)
+\begin{DoxyCompactList}\small\item\em 计算坐标轴的旋转角度 \end{DoxyCompactList}\item 
+cv\+::\+Vec3d \mbox{\hyperlink{namespacemy__linear__algebra_acd3b6b29042ea3d6ceafc74ace2975ce}{R2\+Vr}} (const cv\+::\+Matx33d \&R)
+\begin{DoxyCompactList}\small\item\em 计算旋转向量 \end{DoxyCompactList}\item 
+cv\+::\+Matx33d \mbox{\hyperlink{namespacemy__linear__algebra_a3db83bdbd9660f8f1f408d4fb4a65dae}{Vr2R}} (const cv\+::\+Vec3d \&V)
+\begin{DoxyCompactList}\small\item\em 计算旋转矩阵 \end{DoxyCompactList}\item 
+cv\+::\+Vec3d \mbox{\hyperlink{namespacemy__linear__algebra_aae6c65bdd21ffebdf8e1a89072bbb39b}{Angles2\+Vr}} (const double psi, const double phi, const double theta)
+\begin{DoxyCompactList}\small\item\em 计算旋转向量 \end{DoxyCompactList}\item 
+cv\+::\+Vec3d \mbox{\hyperlink{namespacemy__linear__algebra_aa7bec138549bc2d25e3ac6c9e664b18d}{Vr2\+Angles}} (const cv\+::\+Vec3d \&V)
+\begin{DoxyCompactList}\small\item\em 计算坐标轴的旋转角度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+线性代数命名空间 
+
+\subsection{函数说明}
+\mbox{\Hypertarget{namespacemy__linear__algebra_af25af21d6df34ed01c3b167b301f14de}\label{namespacemy__linear__algebra_af25af21d6df34ed01c3b167b301f14de}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Angle2Rx@{Angle2Rx}}
+\index{Angle2Rx@{Angle2Rx}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Angle2Rx()}{Angle2Rx()}}
+{\footnotesize\ttfamily cv\+::\+Matx33d my\+\_\+linear\+\_\+algebra\+::\+Angle2\+Rx (\begin{DoxyParamCaption}\item[{const double}]{psi }\end{DoxyParamCaption})}
+
+
+
+计算x轴旋转矩阵 
+
+计算坐标系绕x轴旋转的3$\ast$3矩阵，以左手系为例：旋转方向遵循左手螺旋法则
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em psi} & 绕x轴旋转的角度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3$\ast$3矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 46 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_aa49a94528c255627f05e020b5be3f1e3}\label{namespacemy__linear__algebra_aa49a94528c255627f05e020b5be3f1e3}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Angle2Ry@{Angle2Ry}}
+\index{Angle2Ry@{Angle2Ry}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Angle2Ry()}{Angle2Ry()}}
+{\footnotesize\ttfamily cv\+::\+Matx33d my\+\_\+linear\+\_\+algebra\+::\+Angle2\+Ry (\begin{DoxyParamCaption}\item[{const double}]{phi }\end{DoxyParamCaption})}
+
+
+
+计算y轴旋转矩阵 
+
+计算坐标系绕x轴旋转的3$\ast$3矩阵，以左手系为例：旋转方向遵循左手螺旋法则
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em phi} & 绕y轴旋转的角度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3$\ast$3矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 61 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_a5b7ede204e82cae38ed044eea54e4d79}\label{namespacemy__linear__algebra_a5b7ede204e82cae38ed044eea54e4d79}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Angle2Rz@{Angle2Rz}}
+\index{Angle2Rz@{Angle2Rz}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Angle2Rz()}{Angle2Rz()}}
+{\footnotesize\ttfamily cv\+::\+Matx33d my\+\_\+linear\+\_\+algebra\+::\+Angle2\+Rz (\begin{DoxyParamCaption}\item[{const double}]{theta }\end{DoxyParamCaption})}
+
+
+
+计算z轴旋转矩阵 
+
+计算坐标系绕x轴旋转的3$\ast$3矩阵，以左手系为例：旋转方向遵循左手螺旋法则
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em theta} & 绕z轴旋转的角度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3$\ast$3矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 76 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_adf49893ee693256be7a97133ceaa551d}\label{namespacemy__linear__algebra_adf49893ee693256be7a97133ceaa551d}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Angles2R@{Angles2R}}
+\index{Angles2R@{Angles2R}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Angles2R()}{Angles2R()}}
+{\footnotesize\ttfamily cv\+::\+Matx33d my\+\_\+linear\+\_\+algebra\+::\+Angles2R (\begin{DoxyParamCaption}\item[{const double}]{psi,  }\item[{const double}]{phi,  }\item[{const double}]{theta }\end{DoxyParamCaption})}
+
+
+
+计算旋转矩阵 
+
+计算坐标系绕x、y、z轴旋转的3$\ast$3矩阵，以左手系为例：旋转方向遵循左手螺旋法则
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em psi} & 绕x轴旋转的角度 \\
+\hline
+\mbox{\texttt{ in}}  & {\em phi} & 绕y轴旋转的角度 \\
+\hline
+\mbox{\texttt{ in}}  & {\em theta} & 绕z轴旋转的角度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3$\ast$3矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 93 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_aae6c65bdd21ffebdf8e1a89072bbb39b}\label{namespacemy__linear__algebra_aae6c65bdd21ffebdf8e1a89072bbb39b}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Angles2Vr@{Angles2Vr}}
+\index{Angles2Vr@{Angles2Vr}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Angles2Vr()}{Angles2Vr()}}
+{\footnotesize\ttfamily cv\+::\+Vec3d my\+\_\+linear\+\_\+algebra\+::\+Angles2\+Vr (\begin{DoxyParamCaption}\item[{const double}]{psi,  }\item[{const double}]{phi,  }\item[{const double}]{theta }\end{DoxyParamCaption})}
+
+
+
+计算旋转向量 
+
+先计算3$\ast$3旋转矩阵，再用罗德里格斯变换，把旋转矩阵换换成旋转向量
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em psi} & 绕x轴旋转的角度 \\
+\hline
+\mbox{\texttt{ in}}  & {\em phi} & 绕y轴旋转的角度 \\
+\hline
+\mbox{\texttt{ in}}  & {\em theta} & 绕z轴旋转的角度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3$\ast$3旋转矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 154 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_aa9ecf9b22bbf44d286bf404af3461d58}\label{namespacemy__linear__algebra_aa9ecf9b22bbf44d286bf404af3461d58}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Deg2Rad@{Deg2Rad}}
+\index{Deg2Rad@{Deg2Rad}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Deg2Rad()}{Deg2Rad()}}
+{\footnotesize\ttfamily double my\+\_\+linear\+\_\+algebra\+::\+Deg2\+Rad (\begin{DoxyParamCaption}\item[{const double}]{d }\end{DoxyParamCaption})}
+
+
+
+将角度值转换成弧度值 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em d} & 角度值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+弧度值 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 25 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_a362b45c147136aa0f1045200545cb38a}\label{namespacemy__linear__algebra_a362b45c147136aa0f1045200545cb38a}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!R2Angles@{R2Angles}}
+\index{R2Angles@{R2Angles}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{R2Angles()}{R2Angles()}}
+{\footnotesize\ttfamily cv\+::\+Vec3d my\+\_\+linear\+\_\+algebra\+::\+R2\+Angles (\begin{DoxyParamCaption}\item[{const cv\+::\+Matx33d \&}]{R }\end{DoxyParamCaption})}
+
+
+
+计算坐标轴的旋转角度 
+
+计算根据旋转矩阵，计算绕x、y、z轴旋转的角度，以左手系为例：旋转方向遵循左手螺旋法则
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em R} & 3$\ast$3旋转矩阵 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+绕x、y、z轴旋转的角度，依次保存在一个向量中 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 105 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_acd3b6b29042ea3d6ceafc74ace2975ce}\label{namespacemy__linear__algebra_acd3b6b29042ea3d6ceafc74ace2975ce}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!R2Vr@{R2Vr}}
+\index{R2Vr@{R2Vr}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{R2Vr()}{R2Vr()}}
+{\footnotesize\ttfamily cv\+::\+Vec3d my\+\_\+linear\+\_\+algebra\+::\+R2\+Vr (\begin{DoxyParamCaption}\item[{const cv\+::\+Matx33d \&}]{R }\end{DoxyParamCaption})}
+
+
+
+计算旋转向量 
+
+用罗德里格斯变换，把旋转矩阵转换成旋转向量
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em R} & 3$\ast$3旋转矩阵 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+旋转向量 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 124 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_a899a8fdd5b4b176a7eab324b7b8fd812}\label{namespacemy__linear__algebra_a899a8fdd5b4b176a7eab324b7b8fd812}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Rad2Deg@{Rad2Deg}}
+\index{Rad2Deg@{Rad2Deg}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Rad2Deg()}{Rad2Deg()}}
+{\footnotesize\ttfamily double my\+\_\+linear\+\_\+algebra\+::\+Rad2\+Deg (\begin{DoxyParamCaption}\item[{const double}]{r }\end{DoxyParamCaption})}
+
+
+
+将弧度值转成角度值 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em r} & 弧度值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+角度值 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 34 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_aa7bec138549bc2d25e3ac6c9e664b18d}\label{namespacemy__linear__algebra_aa7bec138549bc2d25e3ac6c9e664b18d}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Vr2Angles@{Vr2Angles}}
+\index{Vr2Angles@{Vr2Angles}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Vr2Angles()}{Vr2Angles()}}
+{\footnotesize\ttfamily cv\+::\+Vec3d my\+\_\+linear\+\_\+algebra\+::\+Vr2\+Angles (\begin{DoxyParamCaption}\item[{const cv\+::\+Vec3d \&}]{V }\end{DoxyParamCaption})}
+
+
+
+计算坐标轴的旋转角度 
+
+先计算3$\ast$3旋转矩阵，再计算坐标轴的旋转角度
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em V} & 旋转向量 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+绕x、y、z轴旋转的角度，依次保存在一个向量中 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 167 行定义.
+
+\mbox{\Hypertarget{namespacemy__linear__algebra_a3db83bdbd9660f8f1f408d4fb4a65dae}\label{namespacemy__linear__algebra_a3db83bdbd9660f8f1f408d4fb4a65dae}} 
+\index{my\_linear\_algebra@{my\_linear\_algebra}!Vr2R@{Vr2R}}
+\index{Vr2R@{Vr2R}!my\_linear\_algebra@{my\_linear\_algebra}}
+\subsubsection{\texorpdfstring{Vr2R()}{Vr2R()}}
+{\footnotesize\ttfamily cv\+::\+Matx33d my\+\_\+linear\+\_\+algebra\+::\+Vr2R (\begin{DoxyParamCaption}\item[{const cv\+::\+Vec3d \&}]{V }\end{DoxyParamCaption})}
+
+
+
+计算旋转矩阵 
+
+用罗德里格斯变换，把旋转矩阵向量换成旋转矩阵
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em V} & 旋转向量 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3$\ast$3旋转矩阵 
+\end{DoxyReturn}
+
+
+在文件 Rotation\+Transformation.\+h 第 138 行定义.
+

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+
+    <!-- 调试的工作目录   -->
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)Bin\</LocalDebuggerWorkingDirectory>
+
+    <!-- 选择本机调试     -->
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+
+    <!-- 可以修改系统PATH -->
+    <LocalDebuggerEnvironment>PATH=%PATH%</LocalDebuggerEnvironment> 
+
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,18 @@
+QRectF FitRect(const QRectF& target, const QRectF& source)
+{
+  QRectF fit;
+
+  double src_aspect_ratio = 1.0 * source.height() / source.width();
+  double tar_aspect_ratio = 1.0 * target.height() / target.width();
+
+  double h = src_aspect_ratio > tar_aspect_ratio ? target.height() : target.width() * src_aspect_ratio;
+  double w = src_aspect_ratio > tar_aspect_ratio ? target.height() / src_aspect_ratio : target.width();
+
+  double l = (target.width() - w) / 2;
+  double t = (target.height() - h) / 2;
+
+  fit = QRectF(l, t, w, h);
+
+  return fit;
+}
+

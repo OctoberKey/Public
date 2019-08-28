@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+
+    <!-- 头文件目录 -->
+    <IncludePath Condition="'$(Platform)'=='Win32'">E:\Code\Library\log4cplus\log4cplus-2.0.4\sdk\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Platform)'=='x64'">E:\Code\Library\log4cplus\log4cplus-2.0.4\sdk64\include;$(IncludePath)</IncludePath>
+
+    <!-- 库文件目录 -->
+    <LibraryPath Condition="'$(Platform)'=='Win32'">E:\Code\Library\log4cplus\log4cplus-2.0.4\sdk\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='x64'">E:\Code\Library\log4cplus\log4cplus-2.0.4\sdk64\lib;$(LibraryPath)</LibraryPath>
+
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+
+      <!-- 库文件 -->
+      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">log4cplusUD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">log4cplusU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

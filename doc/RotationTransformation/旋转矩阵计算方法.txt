@@ -1,0 +1,9 @@
+Rx				Ry				Rz		
+1	0	0		cos(b)	0	-sin(b)		cos(c)	sin(c)	0
+0	cos(a)	sin(a)		0	1	0		-sin(c)	cos(c)	0
+0	-sin(a)	cos(a)		sin(b)	0	cos(b)		0	0	1
+										
+Rx * Ry					Rx * Ry * Rz						
+cos(b)			-sin(b)		cos(b)*cos(c)				cos(b)*sin(c)				-sin(b)				
+sin(a)*sin(b)	cos(a)	sin(a)*cos(b)	sin(a)*sin(b)*cos(c)-cos(a)*sin(c)	sin(a)*sin(b)*sin(c)+cos(a)*cos(c)	sin(a)*cos(b)				
+cos(a)*sin(b)	-sin(a)	cos(a)*cos(b)	cos(a)*sin(b)*cos(c)+sin(a)*sin(c)	cos(a)*sin(b)*sin(c)-sin(a)*cos(c)	cos(a)*cos(b)				

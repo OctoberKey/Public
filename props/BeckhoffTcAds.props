@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+
+    <!-- 头文件目录 -->
+    <IncludePath>C:\TwinCAT\AdsApi\TcAdsDll\Include;$(IncludePath)</IncludePath>
+
+    <!-- 库文件目录 -->
+    <LibraryPath Condition="'$(Platform)'=='Win32'">C:\TwinCAT\AdsApi\TcAdsDll\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='x64'">C:\TwinCAT\AdsApi\TcAdsDll\x64\lib;$(LibraryPath)</LibraryPath>
+
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+
+      <!-- 库文件 -->
+      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">TcAdsDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">TcAdsDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

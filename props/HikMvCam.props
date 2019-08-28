@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+
+    <!-- 头文件目录 -->
+    <IncludePath>$(MVCAM_COMMON_RUNENV)\Includes;$(IncludePath)</IncludePath>
+
+    <!-- 库文件目录 -->
+    <LibraryPath Condition="'$(Platform)'=='Win32'">$(MVCAM_COMMON_RUNENV)\Libraries\win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='x64'">$(MVCAM_COMMON_RUNENV)\Libraries\win64;$(LibraryPath)</LibraryPath>
+
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+
+      <!-- 库文件 -->
+      <AdditionalDependencies>MvCameraControl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
